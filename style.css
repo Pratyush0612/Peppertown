@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 
 :root{
-   --peru:#cd9452;
-   --black:#222;
-   --white:#fff;
-   --light-black:#666;
-   --light-white:#ccc;
-   --light-bg:#f5f5f5;
-   --dark-bg:rgba(0,0,0,.7);
-   --border:.1rem solid #aaa;
-   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --peru:#999692;
+   --black:rgb(153, 142, 142);
+   --white:rgba(238, 220, 220, 0.966);
+   --light-black: rgb(231, 14, 14);
+   --light-white:rgb(66, 61, 61);
+   --light-bg:#585050;
+   --dark-bg:rgba(129, 127, 127, 0.7);
+   --border:.1rem solid hsl(0, 84%, 52%);
+   --box-shadow:0 .8rem 1rem rgba(36, 32, 32, 0.1);
 }
 .center{
    display: flex;
@@ -66,6 +66,7 @@ section{
 }
 
 .heading h3{
+   font-family: cursive;
    font-size: 4.5rem;
    color:var(--black);
 }
@@ -100,22 +101,22 @@ section{
 .header .logo{
    font-size: 2.5rem;
    font-weight: bolder;
-   color:var(--peru);
+   color:red);
 }
 
 .header .logo i{
-   color:var(--peru);
+   color: red;
    padding-right: .5rem;
 }
 
 .header .navbar a{
    font-size: 2rem;
    margin-left: 2rem;
-   color:var(--light-black);
+   color:rgb(233, 70, 70);
 }
 
 .header .navbar a:hover{
-   color:var(--peru);
+   color:black;
 }
 
 #menu-btn{
@@ -222,7 +223,7 @@ section{
 }
 
 .about .image img{
-   width: 100%;
+   width: 550px;
 }
 
 .about .content{
@@ -322,6 +323,11 @@ section{
    display: none;
    align-items: center;
    justify-content: center;
+   -webkit-animation-name: slide_animation;
+   -webkit-animation-duration: 10s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-play-state: running;
 }
 
 .food-preview-container .food-preview{
@@ -536,11 +542,6 @@ section{
    resize: none;
 }
 
-.order form .box-container .box .inputBox .map{
-   height: 20rem;
-   width: 100%;
-   margin:1rem 0;
-}
 
 .order form .box-container .box .inputBox span{
    color:var(--light-black);
